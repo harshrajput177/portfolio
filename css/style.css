@@ -656,10 +656,10 @@ h3.my-profession
     color: var(--skin-color);
     transition: all 0.3s ease;
 }
-.service .service-item .service-item-inner:hover .icon
+/* .service .service-item .service-item-inner:hover .icon
 {
     background-color: var(--skin-color);
-}
+} */
 .service .service-item .service-item-inner:hover .icon .fa 
 {
     font-size: 25px;
@@ -859,5 +859,8 @@ h3.my-profession
     border-radius: 15px;
     background: var(--bg-black-100);
     box-shadow: 2px 2px 3px rgb(112, 110, 110);
+}
+.cloud{
+    font-size: 40px;
 }
 
