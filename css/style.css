@@ -12,15 +12,14 @@ html{
     box-sizing: border-box;
 }
 
-.logo{
-   width: 200px;
-   height: 100px;
-}
-
 .nav-container{
    padding: 9px 30px;
     display: flex;
     justify-content: space-between;
+}
+.nav-container img{
+    width: 210px;
+    height: 110px;
 }
 
 nav ul li{
@@ -510,6 +509,10 @@ nav .fa-solid{
     }
     .contact-right{
         padding-top: 20%;
+    }
+    .nav-container img{
+        width: 200px;
+        height: 100px;
     }
    
 }
