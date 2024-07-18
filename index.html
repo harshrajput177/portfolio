@@ -5,431 +5,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harsh - Personal Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/color-1.css ">
     <!-- style switcher -->
-    <link rel="stylesheet" href="css/color-1.css " class="alternate-style" title="color-1" disabled >
-    <link rel="stylesheet" href="css/color-2.css " class="alternate-style" title="color-2" disabled >
-    <link rel="stylesheet" href="css/color-3.css " class="alternate-style" title="color-3" disabled >
-    <link rel="stylesheet" href="css/color-4.css " class="alternate-style" title="color-4" disabled >
-    <link rel="stylesheet" href="css/color-5.css " class="alternate-style" title="color-5" disabled >
-    <link rel="stylesheet" href="css/style-switcher.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <!-- main container -->
-    <div class="main-container">
-        <!-- aside start -->
-        <div class="aside">
-            <div class="logo">
-                <a href="#"><span>H</span>arsh</a>
-            </div>
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <ul class="nav">
-                <li><a href="#home" id="nav_a" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#about" id="nav_a"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#service" id="nav_a"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#service" id="nav_a"><i class="fa fa-briefcase"></i>Projects</a></li>
-                <li><a href="#contact" id="nav_a"><i class="fa fa-comments"></i>Contact</a></li>
-            </ul>
+ 
+    <div id="header">
+        <div class="nav-container">
+            <img src="/images/rename.png" alt="" class="logo">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"  onclick="openMenu()"></i>
+            </nav>
+         
         </div>
-        <!-- aside end -->
-        <!-- main content start -->
-        <div class="main-content">
-            <!-- home section start-->
-            <section class="home section active" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Harsh kumar</span></h3>
-                            <h3 class="my-profession">I'm a <span class="typing">Web Developer</span></h3>
-                            <p>As a skilled web developer, I adeptly craft digital landscapes, blending creativity with technical prowess to bring websites to life. With a keen eye for design and a proficiency in various programming languages and frameworks, I specialize in building dynamic and user-friendly online experiences. My passion lies in translating concepts into functional, visually captivating web solutions that meet both client objectives and user needs.</p>
-                            <a href="#about" class="btn GoToAbout">More About Me</a>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="img/img.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- home section end-->
-
-            <!-- about section start-->
-            <section class="about section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>I'am Harsh and I am a <span>Web Developer</span></h3>
-                                    <p>As a skilled web developer, I adeptly craft digital landscapes, blending creativity with technical prowess to bring websites to life. With a keen eye for design and a proficiency in various programming languages and frameworks, I specialize in building dynamic and user-friendly online experiences. My passion lies in translating concepts into functional, visually captivating web solutions that meet both client objectives and user needs.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="personal-info padd-15">
-                            <div class="row">
-                                <div class="info-item padd-15">
-                                    <p>Email : <span>harshrajput30411@gmail.com</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>Age : <span>22</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>Phone No : <span>9458006097</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>Degree : <span>BCA</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>College : <span>Gl Bajaj</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>City : <span>Bulandshahr</span></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="buttons padd-15">
-                                    <!-- <a href="#" class="btn">Download CV</a> -->
-                                    <a href="Harsh_kumar_final_resume.pdf" download class="btn hire-me">Download CV</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills padd-15">
-                            <div class="row">
-                                <div class="skill-item padd-15">
-                                    <h5>Java</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 86%;"></div>
-                                        <div class="skill-percent">75%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>HTML-CSS-JavaScript</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 76%;"></div>
-                                        <div class="skill-percent">85%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>MERN-Stack</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 80%;"></div>
-                                        <div class="skill-percent">80%</div>
-                                    </div>
-                                </div>
-                                <!-- <div class="skill-item padd-15">
-                                    <h5>HTML/CSS</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 75%;"></div>
-                                        <div class="skill-percent">75%</div>
-                                    </div>
-                                </div> -->
-                                <!-- <div class="skill-item padd-15">
-                                    <h5>Spring</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 60%;"></div>
-                                        <div class="skill-percent">60%</div>
-                                    </div>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="education padd-15">
-                            <h3 class="title">Education</h3>
-                            <div class="row">
-                                <div class="timline-box padd-15">
-                                    <div class="timline shadow-dark">
-                                        <!-- timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2018-2019
-                                            </h3>
-                                            <h4 class="timeline-title">Class-10th Boards</h4>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2020-2021
-                                            </h3>
-                                            <h4 class="timeline-title">Class-12th Boards</h4>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2021-2025
-                                            </h3>
-                                            <h4 class="timeline-title">BCA</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="experience padd-15">
-                            <h3 class="title">Experience</h3>
-                            <div class="row">
-                                <div class="timline-box padd-15">
-                                    <div class="timline shadow-dark">
-                                        <!-- timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2018-2019
-                                            </h3>
-                                            <h4 class="timeline-title">Class-10th Boards</h4>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2020-2021
-                                            </h3>
-                                            <h4 class="timeline-title">Class-12th Boards</h4>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2021-2025
-                                            </h3>
-                                            <h4 class="timeline-title">BCA</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- about section end-->
-            <!-- services section starts -->
-            <section class="service section" id="service">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Services</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        
-                        <!-- service item start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-laptop-code"></i>
-                                </div>
-                                <h4>Front-end Web Developer</h4>
-                                <p>Experienced front-end developer skilled in creating dynamic and responsive web applications using HTML, CSS, and JavaScript. Proficient in modern frameworks and libraries such as React.js
-                                    
-                                    , with a strong eye for design and user experience. Adept at collaborating with cross-functional teams to deliver seamless and engaging interfaces. Committed to writing clean, maintainable code and continuously learning new technologies to stay current in the fast-paced field of web development.</p>
-                            </div>
-                        </div>
-                        <!-- service item end -->
-                        <!-- service item start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-palette"></i>
-                                </div>
-                                <h4>Back-end Web Developer</h4>
-                                <p>Experienced backend developer adept at architecting robust and scalable web applications using languages such as Node.js. Proficient in designing and implementing RESTful APIs to handle data securely and efficiently. Skilled in database management with SQL or NoSQL databases like MySQL, PostgreSQL, or MongoDB. Collaborates effectively with cross-functional teams to integrate backend systems with front-end interfaces. Committed to writing clean, efficient code and staying updated with emerging technologies in backend development.</p>
-                            </div>
-                        </div>
-                   
-                        <!-- service item end -->
-                        <!-- service item start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-code"></i>
-                                </div>
-                                <h4>Problem Solving using Java</h4>
-                                <p>Experienced problem solver proficient in Java, adept at tackling complex challenges with innovative solutions. Skilled in leveraging Java's robust features and libraries to develop efficient and scalable applications. Capable of analyzing problems, identifying root causes, and implementing effective solutions. Demonstrated ability to collaborate with teams to address technical issues and optimize performance. Committed to continuous learning and staying updated with the latest developments in Java programming.</p>
-                            </div>
-                        </div>
-                        <!-- service item end -->
-                        <!-- service item start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa-brands fa-airbnb  cloud"></i>
-                                </div>
-                                <h4>Ecommerce(Airbnb)</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo atque tenetur assumenda quidem, sed ducimus dolores error necessitatibus quos, nihil voluptas asperiores exercitationem iure omnis molestiae. Quidem explicabo nisi ipsam?</p>
-                            </div>
-                        </div>
-                        <!-- service item end -->
-                        <!-- service item start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">                      
-                                <i class="fa-solid fa-cloud-sun-rain  cloud"></i>  
-                                </div>
-                                <h4>Weather APP</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo atque tenetur assumenda quidem, sed ducimus dolores error necessitatibus quos, nihil voluptas asperiores exercitationem iure omnis molestiae. Quidem explicabo nisi ipsam?</p>
-                            </div>
-                        </div>
-                  
-                        <!-- service item end -->
-                        <!-- service item start -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa-brands fa-spotify cloud"></i>
-                                </div>
-                                <h4>Spotify-clone</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo atque tenetur assumenda quidem, sed ducimus dolores error necessitatibus quos, nihil voluptas asperiores exercitationem iure omnis molestiae. Quidem explicabo nisi ipsam?</p>
-                            </div>
-                        </div>
-                        <!-- service item end -->
-                        
-                    </div>
-                </div>
-            </section>
-            <!-- services section end -->
-            <!-- portfolio section starts -->
-            <section class="service section" id="service">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2>My Last Projects: </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- portfolio item start -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="#" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio item ends -->
-                    </div>
-                </div>
-            </section>
-            <!-- portfolio section ends -->
-            <!-- contact section start -->
-            <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Contact Me</h2>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">Hava You Any Question</h3>
-                    <h4 class="contact-sub-title padd-15">I'm at your service</h4>    
-                    <div class="row">
-                        <!-- contact item start -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call Me On</h4>
-                            <p>+91-9458006097</p>
-                        </div>
-                        <!-- contact item ends -->
-                        <!-- contact item start -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>Office</h4>
-                            <p>Bulandshahr</p>
-                        </div>
-                        <!-- contact item ends -->
-                        <!-- contact item start -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <p>harshrajput30411@gmail.com</p>
-                        </div>
-                        <!-- contact item ends -->
-                        <!-- contact item start -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                            <h4>Website</h4>
-                            <p>www.domain.com</p>
-                        </div>
-                        <!-- contact item ends -->
-                    </div>
-                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                    <h4 class="contact-sub-title padd-15">I"M VERY RESPONSIVE TO MESSAGES</h4>
-                    <!-- contact form starts -->
-                    <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <button type="submit" onclick="alert('message sent successfully')" class="btn">Send Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- contact form ends -->
-                </div>
-            </section>
-            <!-- contact section ends -->
-
+    
+        <div class="header-detail">
+            <div class="header-text">
+                <h1> 
+                Hi, &nbsp; I'm <span>Harsh Kumar</span>
+                 </h1>
+                 <br>
+                
+                 <h2>MERN STACK DEVELOPER</h2>
+                 <br>
+                 <p>I have completed my Bachelor's degree in Computer Applications <br>
+                from Gl Bajaj institute of management and have also done a specialized<br>
+                 course in MERN stack development.</p>
+                 <br>
+                 <button class="social-media"><i class="fa-brands fa-facebook"></i></button>
+                 <button class="social-media"><i class="fa-brands fa-instagram"></i></button>
+                 <button class="social-media"><i class="fa-brands fa-github"></i></button>
+                 <button class="social-media"><i class="fa-brands fa-linkedin"></i></button>
+                 <br>  <br>
+                 <a href="images/harshrajput.pdf" download  ><button class="btn">Download CV</button></a>
+            </div>
+            <div class="main-img"><img src="images/IMG_20230130_225314_133 (2).jpg" alt=""></div>
         </div>
-        <!-- main content end -->
     </div>
 
-    <!-- main container -->
-    <!-- style switcher start -->
-    <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
-        </div>
-        <div class="day-night s-icon">
-            <i class="fas fa-moon"></i>
-        </div>
-        <h4>Theme colors</h4>
-        <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    <!--..................... ABOUT.................................  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/IMG_20230130_225314_133 (2).jpg" alt="" class="image-back">
+                    <span class="circle-spin"></span>
+                </div>
+                <div class="about-col-2">
+                    <h1>About <span>Me</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quis assumenda rerum reiciendis repellat magni voluptatem optio, nesciunt nulla numquam illum, similique ipsam accusamus 
+                        laudantium sapiente eligendi eaque. Animi, at!</p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-link" onclick="opentab('project')">Projects</p>
+                    </div>
+
+                    <div class="table-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Javascript, Core Java, Html, CSS</li><br>
+                            <li><span>Technologies/Frameworks</span><br>ReactJS, NodeJS, ExpressJS, Monogdb, Github</li><br>
+                            <li><span>Developer Tools</span><br>VS Code, Hopscotch, Mysql, Intellij Idea Ultimate</li>
+                        </ul>
+                    </div>
+                    <div class="table-content" id="education">
+                        <ul>
+                            <li><span>Sep 2021 -- July 2024</span><br>GL BAJAJ INSTITUTE OF MANAGEMENT 
+                                <br>Bachelor of Computer Application Percentage: 65.9%</li><br>
+                            <li><span>Sep 2020 -- Sep 2021</span><br>SANTOSH INTERNATIONAL SCHOOL <br>
+                            (Physics, Chemistry, Math) Percentage: 70%</li>
+                        </ul>
+                    </div>
+                    <div class="table-content" id="project">
+                        <ul>
+                            <li><span>Food E-commerce Website (May 2024 -- July 2024)</span><br>Developed a comprehensive food e-commerce platform using the MERN stack.</li><br>
+                            <li><span>Wanderlust E-commerce Website (Feb 2024 -- Mar 2024)</span><br>Developed a comprehensive e-commerce platform inspired by Airbnb, focused on rental properties.</li><br>
+                            <li><span>Weather App (Nov 2023 -- Dec 2023)</span><br>Developed a dynamic weather application using the Fetch API to provide real-time weather updates. This project aimed to deliver accurate and timely weather information to users.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- style switcher end -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script> $(document).ready(function() {
-        $('html, body').animate({scrollTop: 0}, 'slow');
-    });</script>
-    <script src="js/style-switcher.js">
+
+    <!--........................... SERVICES.................................... -->
+<div id="service">
+    <div class="service-container">
+        <h1 class="sub-title">My Service</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Frontend Developer</h2>
+                <p>"I specialize in creating responsive, user-friendly, and visually appealing web interfaces<br>
+                     using the latest frontend technologies like HTML, CSS, JavaScript, and frameworks such as React js </p>
+                     <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-node-js"></i>
+                <h2>Backend Developer</h2>
+                <p>"I excel in backend development, ensuring robust, scalable, and secure server-side applications using technologies like Node.js, Express, and MongoDB. My expertise includes designing and implementing APIs, 
+                    managing databases, and optimizing server performance to support dynamic and efficient web applications. </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>OOPs</h2>
+               <p>I have a strong foundation in Object-Oriented Programming (OOP), utilizing principles such as inheritance, polymorphism, encapsulation, and abstraction to write clean and maintainable code.
+                 My expertise in OOP helps me design scalable and efficient software solutions, ensuring code reusability and robust architecture."</p>
+                 <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ...............portfolio................ -->
+ <div id="portfolio">
+    <div class="container">
+    <h1 class="sub-title">My Work</h1>
+       <div class="work-list">
+        <div class="work">
+            <img src="images/work-1.png" alt="">
+            <div class="layer">
+                <h3>E-commerce(Food Website)</h3>
+                <p>Developed a comprehensive food e-commerce platform using the MERN stack.</p>
+                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-2.png" alt="">
+            <div class="layer">
+            <h3>Wanderlust E-commerce Website</h3>
+            <p>Developed a comprehensive e-commerce platform inspired by Airbnb, focused on rental properties.</p>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+       
+        <div class="work">
+            <img src="images/work-3.png" alt="">
+            <div class="layer">
+            <h3>Weather App</h3>
+            <p>Developed a dynamic weather application using the Fetch API to provide real-time weather updates.</p>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+</div>  
+</div>
+</div>
+    <!-- ...........Contact.......................... -->
+     <div id="contact">
+        <div class="contact-container">
+            <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>harshrajput30411@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9458006097</p>
+                <br>
+                <div class="social-icon">
+                    <a href="" ><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div><br>
+                <br>
+                <a href="images/harshrajput.pdf" download  ><button class="btns">Download CV</button></a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder=" enter your name" required />
+                        <input type="text" name="email" placeholder="enter your email" required />
+                        <textarea name="Message" id="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btns btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="copy">
+        <p>@Copyright harsh. Made with &nbsp;<i class="fa-solid fa-heart"></i> &nbsp;</p>
+     </div>
+ </div>
+
+    <script>
+        function opentab(tabname) {
+            var tabLinks = document.querySelectorAll(".tab-link");
+            var tabContents = document.querySelectorAll(".table-content");
+
+            tabLinks.forEach(function(tabLink) {
+                tabLink.classList.remove("active-link");
+            });
+
+            tabContents.forEach(function(tabContent) {
+                tabContent.classList.remove("active-tab");
+            });
+
+            // document.querySelector("[onclick='opentab(\"" + tabname + "\")']").classList.add("active-link");
+            // document.getElementById(tabname).classList.add("active-tab");
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
     </script>
-    <script src="js/script.js"></script>
+  
+  <script>
+    function openMenu() {
+        var sidemenu = document.getElementById("sidemenu");
+        sidemenu.style.right = "0";
+    }
+    function closeMenu() {
+        var sidemenu = document.getElementById("sidemenu");
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
 </body>
 </html>
