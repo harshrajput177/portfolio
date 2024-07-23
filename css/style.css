@@ -517,5 +517,8 @@ nav .fa-solid{
         width: 200px;
         height: 100px;
     }
+    .main-img img{
+        height: 40vh;
+    }
    
 }
