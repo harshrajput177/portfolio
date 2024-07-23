@@ -134,7 +134,7 @@ nav ul li a:hover::after{
 }
 .main-img img{
     width:100%;
-    height: 60vh;
+    height: 48vh;
     border-radius: 100%;
     margin-top: 50px;
 }
