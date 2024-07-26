@@ -137,6 +137,7 @@ nav ul li a:hover::after{
     height: 48vh;
     border-radius: 100%;
     margin-top: 50px;
+    filter: drop-shadow( 0px 0px 10px rgb(0, 186, 177));
 }
 
 
@@ -293,7 +294,7 @@ nav ul li a:hover::after{
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-gap: 55px;
     margin-top: 50px;
     color: #ababab;
    
@@ -489,10 +490,11 @@ nav .fa-solid{
         height: 225px;
     }
     .about-col-1 img{
-        margin-left: 1.4rem;
-        margin-top: 1.4rem;
+        margin-left: 1.2rem;
+        margin-top: 1.2rem;
         width: 180px;
         height: 180px;
+        filter: drop-shadow( 0px 0px 12px rgb(0, 186, 177));
     }
      .about-col-2{
        margin-top: 30px;
@@ -518,7 +520,7 @@ nav .fa-solid{
         height: 100px;
     }
     .main-img img{
-        height: 43.7vh;
+        height: 43.4vh;
     }
    
 }
